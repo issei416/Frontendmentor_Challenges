@@ -30,15 +30,15 @@
       z-index: -1;
     }
     .profile_card {
-      width: fit-content;
       padding: 40px;
+      padding-top: 40px;
       display: flex;
       gap: 20px;
       border-radius: 10px;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      background-color: hsl(0, 0%, 12%,0.6);
+      background-color: hsl(0, 0%, 12%,0.9);
       color: white;
     }
     .profile_card_pic {
@@ -59,7 +59,6 @@
     .profile_card_desc p {
       color: yellow;
       font-size: 14px;
-      line-height: 40px;
       font-weight: 500;
     }
     .desig {
@@ -67,19 +66,24 @@
       font-size: 14px;
       font-weight: 200;
     }
-    .link_list {
+    .platform_links {
+      width: 100%;
+    }
+    .platform_links ul {
+      width: 100%;
       font-weight: 650;
       font-size: 14px;
       list-style: none;
       text-align: center;
       display: flex;
       flex-direction: column;
-      gap: 10px;
+      gap: 12.5px;
     }
     .link {
-      padding: 15px 60px;
+      width: 100%;
+      padding: 12.5px 0 12.5px 0;
       background-color: hsl(0, 0%, 20%);
-      border-radius:10px
+      border-radius:10px;
     }
     .link:hover {
       cursor: pointer;
