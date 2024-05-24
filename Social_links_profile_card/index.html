@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Social links profile</title>
+  <style>
+    * {
+      margin:0;
+      padding: 0;
+    }
+    body {
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: black;
+      font-family: 'Inter';
+    }
+    .profile_card {
+      width: 20%;
+      padding: 40px 20px ;
+      display: flex;
+      gap: 20px;
+      border-radius: 10px;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: hsl(0, 0%, 12%);
+      color: white;
+    }
+    .profile_card_pic {
+      width: 100%;
+      height:min-content;
+      display: inline-flex;
+      justify-content: center;
+    }
+    .profile_card_pic img {
+      border-radius: 50%;
+      height: 80px;
+    }
+    .profile_card_desc {
+      text-align: center;
+      line-height: 25px;
+      width: 80%;
+    }
+    .profile_card_desc p {
+      color: yellow;
+      font-size: 14px;
+    }
+    .desig {
+      font-size: 14px;
+    }
+    .link_list {
+      list-style: none;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .link {
+      padding: 15px 60px;
+      background-color: hsl(0, 0%, 20%);
+      border-radius:10px
+    }
+    .link:hover {
+      cursor: pointer;
+      background-color: yellow;
+      color: black;
+      transition: all ease-in-out .4s;
+    }
+    .attribution { margin-top:10px; font-size: 11px; text-align: center; color:white }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="profile_card">
+    <div class="profile_card_pic">
+      <img src="assets/images/avatar-jessica.jpeg" alt="">
+    </div>
+    <div class="profile_card_desc">
+      <h2>Jessica Randall</h2>
+      <p>London, United Kingdom</p>
+    </div>
+    <div class="desig">
+      "Front-end developer and avid reader."
+    </div>
+    <div class="platform_links">
+      <ul class="link_list">
+        <li class="link">GitHub</li>
+        <li class="link">Frontend Mentor</li>
+        <li class="link">LinkedIn</li>
+        <li class="link">Twitter</li>
+        <li class="link">Instagram</li>  
+      </ul>
+    </div>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://github.com/issei416" target="_blank">Mukesh</a>.
+  </div>
+</body>
+
+</html>
